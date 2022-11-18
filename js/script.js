@@ -1,10 +1,14 @@
-const nome = prompt ('Inserisci il tuo nome');
-const cognome = prompt ('Inserisci il tuo cognome')
-const colore = prompt ('Inserisci il tuo colore preferito')
-const numero = "22"
+let nome = prompt ('Inserisci il tuo nome');
+let cognome = prompt ('Inserisci il tuo cognome')
+let colore = prompt ('Inserisci il tuo colore preferito')
+let numero = "ciao"
 
-const password = nome + cognome + " " + numero
+const password = nome + cognome + colore + " " + numero
 
 document.getElementById('password').innerHTML = 'La tua password è ' + password; 
 
-console.log
+console.log(nome)
+console.log(cognome)
+console.log(colore)
+console.log(numero)
+console.log(password)
