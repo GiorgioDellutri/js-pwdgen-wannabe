@@ -1,0 +1,23 @@
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password-form{
+    height: 400px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 2rem;
+    text-align: center;
+    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+p{
+    width: 400px;
+    height: 50px;
+    border-radius: 30px;
+    margin:  0 auto;
+    background-color: white;
+}
