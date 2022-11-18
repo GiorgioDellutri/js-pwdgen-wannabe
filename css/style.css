@@ -1,23 +1,33 @@
-main{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body{
+    background-color: #304869;
+}
+
+
 .password-form{
-    height: 400px;
-    width: 400px;
     border-radius: 50px;
     padding: 2rem;
     text-align: center;
-    background-image: linear-gradient(to right, #8e2de2, #4a00e0);
+    border: 3px solid #00E165;
+    background-color: #001533;
 }
 
-p{
-    width: 400px;
+h1{
+    font-family: 'Libre Barcode 39 Text', cursive;
+    color: #00E165;
+}
+
+.password{
     height: 50px;
     border-radius: 30px;
-    margin:  0 auto;
     background-color: white;
 }
+
+
+
+
