@@ -1,33 +1,57 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body{
-    background-color: #304869;
+	background-color: #303133;
 }
 
 
 .password-form{
-    border-radius: 50px;
-    padding: 2rem;
+    padding: 3rem;
     text-align: center;
-    border: 3px solid #00E165;
-    background-color: #001533;
+    background-color: rgb(27, 26, 26);
+    position: relative;
+    border: 5px solid #00e165;
 }
 
 h1{
-    font-family: 'Libre Barcode 39 Text', cursive;
-    color: #00E165;
+    font-family: 'Libre Barcode 39 Text', cursive;  
 }
 
 .password{
-    height: 50px;
-    border-radius: 30px;
     background-color: white;
+    height: 50px;
+}
+.passwor p{
+    margin-bottom: 0;
 }
 
+.password-form :before, .password-form :after {
+	content: '';
+	position: absolute;
+	left: -2px;
+	top: -2px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);	
+    background-size: 400%;
+	width: calc(100% + 3px);
+	height: calc(100% + 3px);
+	z-index: -1;
+	animation: steam 15s ease-in-out infinite;
+}
+
+@keyframes steam {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 400% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+.password-form :after {
+	filter: blur(20px);
+}
 
 
 
