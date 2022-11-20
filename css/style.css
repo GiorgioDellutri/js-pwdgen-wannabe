@@ -13,7 +13,6 @@ body{
 }
 
 .windows{
-	height: 400px;
     text-align: center;
 	background-color: #ece9d9;
 	border: 5px solid var(--blue-windows);
