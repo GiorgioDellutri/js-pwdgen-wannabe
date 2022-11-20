@@ -30,6 +30,7 @@ div.esc, div.help{
 	width: 25px;
 	border-radius: 2px;
 	border: 1px solid whitesmoke;
+	box-shadow: inset 0 0 3px #ffffff;
 }
 
 div.esc span, div.help span{
@@ -38,7 +39,6 @@ div.esc span, div.help span{
 
 div.esc{
 	background-color: var(--red-esc);
-	/* box-shadow:inset 0px 0px 20px 10px rgba(255, 255, 255, 0.468); */
 }
 
 div.win-title{
