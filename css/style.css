@@ -6,10 +6,10 @@
 }
 
 body{
+	font-family: 'Open Sans', sans-serif;
 	background-image: url(../img/941898.jpg);
 	background-size: cover;
 	color: black;
-	font-family: 'Open Sans', sans-serif;
 }
 
 .windows{
@@ -48,7 +48,6 @@ div.win-title{
 div.win-title span{
 	font-size: .9rem;
 }
-
 
 div.general, div.advanced{
 	border: 1px solid #bcb9ab;
