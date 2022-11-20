@@ -10,28 +10,87 @@
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS Import -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <main class=" vh-100 d-flex flex-column align-items-center justify-content-center text-dark">
-        <div class="container justify-content-center">
-            <div class="row p-4">
-                <div class="col-12 col-sm-6 mx-auto mb-5">
-                    <div class="img-logo">
-                        <img src="/img/logo.png" class="img-fluid h-75" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <main class=" vh-100 d-flex align-items-center justify-content-center text-dark">
         <div class="container">
             <div class="row ">
-                <div class="col-12 col-sm-6 mx-auto">
-                    <div class="password-form ">
-                        <h1 class="display-1 mb-5 text-light">Password Generator</h1>
-                        <div class="password d-flex justify-content-center align-items-center">
-                            <span id="password"></span>
+                <div class="col-12 col-md-6 mx-auto">
+                    <div class="windows">
+                        <div class="blue-bar d-flex justify-content-between">
+                            <div class="win-title">
+                                <span>Microsoft Security Essential</span>
+                            </div>
+                            <section class="buttons">
+                                <div class="help d-inline-block">
+                                    <span>&#x3F</span>
+                                </div>
+                                <div class="esc d-inline-block">
+                                    <span>&#x2715</span>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="windows-content py-2">
+                            <div class="container-fluid">
+                                <div class="row justify-content-around">
+                                    <div class="col-5 general d-flex flex-column align-items-start">
+                                        <p class="opt-title">General</p>
+                                        <div class="form-check">
+                                            <input class="form-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-label" for="flexCheckDefault">
+                                                Upper case letter (A-Z)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-label" for="flexCheckDefault">
+                                                Lower case letter (a-z)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-label" for="flexCheckDefault">
+                                                Numerals (22)
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 advanced d-flex flex-column align-items-start">
+                                        <p class="opt-title">Advanced</p>
+                                        <div class="form-check">
+                                            <input class="form-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-label" for="flexCheckDefault">
+                                                Special symbol (@,#,%,&)
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-label" for="flexCheckDefault">
+                                                Exclude dubious symbols
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex flex-column">
+                                        <div class="col-6 offset-3 mt-5">
+                                            <div class="password-box p-2">
+                                                <span id="password"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 offset-6 mt-5">
+                                            <div class="img-box"> 
+                                                <span>Powered by</span>
+                                                <img src="./img/logo.png" class="img-fluid" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>

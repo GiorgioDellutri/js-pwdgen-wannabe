@@ -1,57 +1,77 @@
+:root{
+	--blue-windows: #0865ef;
+	--red-esc:#cd3f38;
+	--background-window: #ece9d9;
+	--question-mark:#3c5db6;
+}
+
 body{
-	background-color: #303133;
+	background-image: url(../img/941898.jpg);
+	background-size: cover;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
 }
 
-
-.password-form{
-    padding: 3rem;
+.windows{
+	height: 400px;
     text-align: center;
-    background-color: rgb(27, 26, 26);
-    position: relative;
-    border: 5px solid #00e165;
+	background-color: #ece9d9;
+	border: 5px solid var(--blue-windows);
+	border-radius: 10px;
 }
 
-h1{
-    font-family: 'Libre Barcode 39 Text', cursive;  
+div.blue-bar{
+	height: 30px;
+	width: 100%;
+	background-color: var(--blue-windows);
+}
+
+div.esc, div.help{
+	height: 25px;
+	width: 25px;
+	border-radius: 2px;
+	border: 1px solid whitesmoke;
+}
+
+div.esc span, div.help span{
+	color: whitesmoke;
+}
+
+div.esc{
+	background-color: var(--red-esc);
+	/* box-shadow:inset 0px 0px 20px 10px rgba(255, 255, 255, 0.468); */
+}
+
+div.win-title{
+	color: whitesmoke;
+}
+
+div.win-title span{
+	font-size: .9rem;
+}
+
+
+div.general, div.advanced{
+	border: 1px solid #bcb9ab;
 }
 
 .password{
-    background-color: white;
     height: 50px;
 }
-.passwor p{
-    margin-bottom: 0;
+
+div.form-check{
+	padding: 0;
 }
 
-.password-form :before, .password-form :after {
-	content: '';
-	position: absolute;
-	left: -2px;
-	top: -2px;
-    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
-    #0000ff, #00ff00,#ffff00, #ff0000);	
-    background-size: 400%;
-	width: calc(100% + 3px);
-	height: calc(100% + 3px);
-	z-index: -1;
-	animation: steam 15s ease-in-out infinite;
+p.opt-title, div.form-check{
+	font-size: .8rem;
 }
 
-@keyframes steam {
-	0% {
-		background-position: 0 0;
-	}
-	50% {
-		background-position: 400% 0;
-	}
-	100% {
-		background-position: 0 0;
-	}
+p.opt-title{
+	color: #0865ef;
 }
 
-.password-form :after {
-	filter: blur(20px);
+div.password-box{
+	background-color: whitesmoke;
 }
-
-
 
